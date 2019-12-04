@@ -1,0 +1,581 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Color variables */
+:root {
+  --white: #d4d4d4 !important;
+  --grey: #9e9e9e !important;
+  --red: #510000 !important;
+  --darkgrey: #2b2b2b !important;
+  --black: #151515 !important;
+
+  --white-rgba: rgba(212, 212, 212, 0.9);
+  --grey-rgba: rgba(158, 158, 158, 0.9);
+  --red-rgba: rgba(81, 0, 0, 0.9);
+  --darkgrey-rgba: rgba(43, 43, 43, 0.9);
+  --black-rgba: rgba(21, 21, 21, 0.9);
+}
+
+/* General styling of the page and elements */
+html {
+  text-rendering: optimizeLegibility;
+  line-height: 1.5;
+  font-size: 10px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--white) !important;
+  background: url(https://patrunjel.com/portfolio/assets/images/brick-md.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  line-height: 2 !important;
+}
+
+h1,
+h2,
+h5 {
+  scroll-behavior: smooth;
+  color: var(--white);
+  font-kerning: none;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+  background: transparent;
+  margin: 0 !important;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0;
+  padding: 1.5rem 0.5rem 0 0.5rem;
+  line-height: 2.2;
+  color: white;
+}
+
+button:hover,
+a:hover,
+button:focus,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.row {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------------
+------------------------------ Navigation ---------------------------------
+--------------------------------------------------------------------------- */
+.navbar-custom {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--darkgrey-rgba);
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.navbar-toggler {
+  font-size: 1.4rem !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.active {
+  -webkit-text-decoration: underline overline;
+  -webkit-text-decoration-color: var(--red);
+  text-decoration: underline overline !important;
+  text-decoration-color: var(--red) !important;
+  color: --white !important;
+}
+
+.logo {
+  width: 4em;
+}
+
+/* ------------------------------------------------------------------------
+------------------------------- Headline  ---------------------------------
+--------------------------------------------------------------------------- */
+#headline-row {
+  padding: 8rem 0 2rem 0;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+.img-wrapper a {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border: none;
+  color: var(--white);
+  padding: 0;
+  text-decoration: none;
+  background: transparent;
+}
+
+.view-project-inner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid transparent;
+  background-color: rgba(43, 43, 43, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.view-project-inner h4 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.view-project-inner h2 {
+  text-transform: unset;
+  margin-bottom: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1rem;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+.view-project-inner .project-text-wrap {
+  padding: 25px 20px;
+}
+
+.view-project-inner .project-title {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ------------------------------------------------------------------------
+---------------------------------- Intro  ---------------------------------
+--------------------------------------------------------------------------- */
+.intro-list,
+.services-list {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0;
+  text-align: -webkit-right;
+  text-align: right;
+}
+
+.intro-list li,
+.services-list li {
+  list-style: none;
+}
+
+.services-list h4 {
+  display: inline-block;
+  margin: 0;
+}
+
+/* -- Services -- */
+.services {
+  margin: 0;
+}
+
+/* -- Title -- */
+.title {
+  text-decoration: overline underline;
+  text-decoration-color: var(--red);
+  -webkit-text-decoration: underline overline;
+  -webkit-text-decoration-color: var(--red);
+  text-transform: uppercase;
+  color: var(--darkgrey-rgba) !important;
+  font-size: 2rem;
+}
+
+.concept {
+  text-transform: capitalize;
+  color: var(--red-rgba) !important;
+  text-align: end;
+  font-size: 1.8rem;
+}
+
+/* ------------------------------------------------------------------------
+---------------------------------- Content --------------------------------
+--------------------------------------------------------------------------- */
+/* Paragraph heading */
+#content-row div {
+  padding: 1rem 1.5rem !important;
+}
+
+.link-title {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white-rgba);
+  z-index: 1;
+}
+
+.paragraph-container {
+  position: relative;
+}
+
+.paragraph-heading {
+  font-size: 1.8rem;
+  position: relative;
+  z-index: 1;
+}
+
+.border {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  width: 100%;
+  height: 35%;
+  border: 1px solid var(--red) !important;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(43, 43, 43, 0.8) !important;
+  padding: 1rem;
+}
+
+video {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------------------
+---------------------------------- Footer  --------------------------------
+--------------------------------------------------------------------------- */
+#footer-row h5 {
+  color: var(--red-rgba);
+  font-size: 1.5rem;
+}
+
+#footer-row h5:hover {
+  color: var(--red);
+  transform: scale(1.1);
+}
+
+/* -----------------------------------------------------------------------------
+  ------------------------------ MEDIA QUERIES ---------------------------------
+  --------------------------------------------------------------------------- */
+@media all and (min-width: 768px) {
+  .container-fluid {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  /* Navigation */
+  .navbar-custom {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--darkgrey-rgba);
+    color: var(--white);
+    padding: 0.5rem 2rem !important;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    margin: 0 0 0 8rem !important;
+    padding: 0 !important;
+  }
+
+  .navbar-toggler {
+    font-size: 1.4rem !important;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  #headline-row {
+    display: flex;
+    align-items: flex-end;
+    padding: 5.5rem 0 0 0;
+  }
+
+  #headline-col {
+    align-self: center;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    background-image: url(https://patrunjel.com/portfolio/assets/images/brick-lg.jpg);
+  }
+
+  #content-row div {
+    padding: 1.5rem 2.5rem !important;
+  }
+
+  .container-fluid {
+    grid-gap: 0;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 5em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    color: var(--white);
+  }
+
+  .navbar {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .navbar-custom {
+    padding: 0.5rem 3rem !important;
+  }
+
+  .navbar-custom a:hover,
+  .navbar-custom h2:hover {
+    transition: transform 400ms ease-in-out;
+    color: var(--black);
+    -webkit-text-decoration: underline overline;
+    -webkit-text-decoration-color: var(--red);
+    text-decoration: underline overline;
+    text-decoration-color: var(--red);
+    transform: scale(1.1);
+  }
+
+  #headline-row {
+    padding: 5.5rem 1rem 0 1rem;
+  }
+
+  .paragraph-container {
+    align-self: flex-start;
+    width: fit-content;
+  }
+
+  .border {
+    top: 30%;
+    left: 8%;
+    width: 98%;
+    height: 32%;
+    z-index: 1;
+  }
+
+  .img-wrapper {
+    padding: 1rem 0;
+  }
+
+  .img-wrapper img:hover {
+    filter: brightness(100%);
+  }
+
+  .view-project-inner {
+    display: block;
+  }
+
+  .view-project-inner h2 {
+    background: transparent;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: var(--white);
+    margin: 0 !important;
+  }
+
+  .link-title {
+    top: 60%;
+  }
+
+  .link-title i {
+    text-transform: unset;
+    margin-bottom: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 3rem;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+  }
+
+  .img-wrapper a:hover .view-project-inner {
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    background: rgba(26, 33, 37, 0.9);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    border: 12px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .img-wrapper a:hover h2,
+  .img-wrapper a:hover .link-title i {
+    -webkit-transform: translate(0, -10px);
+    -moz-transform: translate(0, -10px);
+    -ms-transform: translate(0, -10px);
+    -o-transform: translate(0, -10px);
+    transform: translate(0, -10px);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+  }
+
+  .img-wrapper a:hover img {
+    -webkit-transition: all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* Video project */
+  video {
+    outline: none;
+  }
+  .text {
+    padding: 2rem 3rem 2rem 3rem !important;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  body {
+    background-image: url(https://patrunjel.com/portfolio/assets/images/brick.jpg);
+  }
+
+  #content-row div {
+    padding: 1rem 2.5rem !important;
+  }
+
+  .logo {
+    width: 6em;
+  }
+
+  .nav-link {
+    font-size: 1.8rem;
+    margin: 0 0 0 10rem !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  p,
+  a {
+    font-size: 1.5rem;
+  }
+
+  .link-title i {
+    font-size: 5rem;
+  }
+
+  .view-project-inner h2 {
+    font-size: 2.5rem !important;
+  }
+
+  #footer-row h5 {
+    font-size: 1.6rem;
+  }
+}

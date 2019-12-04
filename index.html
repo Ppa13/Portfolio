@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Google Analytics 
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131033013-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-131033013-1');
+	</script>
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Designer & Developer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Styling
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" media="(max-width: 767px)" href="css/max-767px.css">
+	<link rel="stylesheet" media="(min-width: 768px)" href="css/min-768px.css">
+	<link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+		integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Scripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="js/jquery.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="300">
+	<div class="container-fluid p-0">
+		<!-- Navigation -->
+		<div class="row" id="header-row">
+			<div class="col-sm-12 col-md-12 col-lg-12 p-0">
+				<nav class="navbar navbar-expand-md navbar-dark navbar-custom text-uppercase" id="navbar-id">
+					<a class="navbar-brand" href="index.html" aria-label="home button">
+						<img src="assets/images/logo.svg" class="logo" alt="website logo">
+					</a>
+					<button aria-label="burger menu button" class="navbar-toggler shadow-none" type="button"
+						data-toggle="collapse" data-target="#collapse_target" aria-expanded="false">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-end" id="collapse_target">
+						<ul class="navbar-nav align-items-center">
+							<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+							<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+								<a class="nav-link" href="#work">Portfolio</a>
+							</li>
+							<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Page content -->
+		<div class="row" id="content-row">
+			<div class="col-sm-12 col-md-12 col-lg-12 p-0">
+				<!-- TITLE -->
+				<div class="row align-items-center p-0" id="intro">
+					<!-- Page title -->
+					<div class="col-sm-12 col-md-12 col-lg-12 h-100 d-flex justify-content-center align-items-center">
+						<h1 class="page-title scale-up-center">Designer &#38; Developer</h1>
+					</div>
+				</div>
+
+				<!-- ABOUT -->
+				<div class="row" id="about">
+					<!-- Picture -->
+					<div class="col-sm-6 col-md-5 col-lg-5 col-xl-7 d-flex" id="intro-img-col">
+						<div class="img-wrapper">
+							<img srcset="assets/images/ppa-sm.jpg 425w,
+										 assets/images/ppa-md.jpg 800w,
+										 assets/images/ppa-lg.jpg 1024w,
+										 assets/images/ppa.jpg 1280w" sizes="(max-width: 20em) 30vw,
+								 		(max-width: 30em) 60vw,
+								 		(max-width: 40em) 90vw" src="assets/images/ppa.jpg" id="ppa-jpg" alt="photo of a woman">
+							<span class="img-border"></span>
+						</div>
+					</div>
+
+					<!-- Text -->
+					<div class="col-sm-6 col-md-7 col-lg-7 col-xl-5 d-flex" id="about-me-col">
+						<p class="p-wrapper d-flex-inline">
+							Hello :)<br><br>
+							My name is Paula Patrunjel and I am a digital designer and developer,
+							focusing on web development.<br><br>
+							I am currently a student at Zealand Institute of Business and Technology in
+							Copenhagen.<br><br>
+							If you would like to know me better &nbsp;
+							<a class="btn btn-default" href="about.html" aria-label="read more about me link"
+								id="read-more-btn">Read more</a>
+						</p>
+					</div>
+				</div>
+
+				<!-- WORK -->
+				<div class="row flex-row" id="work">
+					<!-- Bouncing arrow -->
+					<div class="col-sm-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center"
+						id="arrow-col">
+						<a href="#slideshow" aria-label="jump to first project arrow">
+							<img class="d-lg-block bounceLeft" alt="arrow" id="left-arrow"
+								src="assets/images/left-arrow.svg">
+						</a>
+					</div>
+
+					<!-- Projects slideshow -->
+					<div class="col-sm-9 col-md-10 col-lg-10 d-flex" id="slideshow-col">
+						<ul class="d-flex">
+							<li class="zero">
+								<section class="slideshow-item">
+									<a href="fremmed.html" aria-label="link to project">
+										<img src="assets/images/fremmed.jpg" srcset="
+													assets/images/fremmed-sm.jpg 320w,
+													assets/images/fremmed-sm.jpg 480w,
+													assets/images/fremmed-md.jpg 768w,
+													assets/images/fremmed-lg.jpg 1024w,
+													assets/images/fremmed.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="Two blue hands">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">Fremmed</span>
+												<h2 class="project-concept">A fresh new sound</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+							<li class="one">
+								<section class="slideshow-item">
+									<a href="wedding-planner.html" aria-label="link to project">
+										<img src="assets/images/wedding-planner.jpg" srcset="
+													assets/images/wedding-planner-sm.jpg 320w,
+													assets/images/wedding-planner-sm.jpg 480w,
+													assets/images/wedding-planner-md.jpg 768w,
+													assets/images/wedding-planner-lg.jpg 1024w,
+													assets/images/wedding-planner.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="married couple hugging">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">Wedding Planner</span>
+												<h2 class="project-concept">Plan your perfect day</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+							<li class="two">
+								<section class="slideshow-item">
+									<a href="irina.html" aria-label="link to project">
+										<img src="assets/images/irina.jpg" srcset="
+													assets/images/irina-sm.jpg 320w,
+													assets/images/irina-sm.jpg 480w,
+													assets/images/irina-md.jpg 768w,
+													assets/images/irina-lg.jpg 1024w,
+													assets/images/irina.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="big tattoo on the back of a woman">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">The Riddle</span>
+												<h2 class="project-concept">What makes you... you?</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+							<li class="three">
+								<section class="slideshow-item">
+									<a href="eleven-squared.html" aria-label="link to project">
+										<img src="assets/images/11squared.jpg" srcset="
+													assets/images/11squared-sm.jpg 320w,
+													assets/images/11squared-sm.jpg 480w,
+													assets/images/11squared-md.jpg 768w,
+													assets/images/11squared-lg.jpg 1024w,
+													assets/images/11squared.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="screenshot of a t-shirts webshop">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">11SQUARED</span>
+												<h2 class="project-concept">Look and feel unique</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+							<li class="four">
+								<section class="slideshow-item">
+									<a href="nodesk.html" aria-label="link to project">
+										<img src="assets/images/nodesk.jpg" srcset="
+													assets/images/nodesk-sm.jpg 320w,
+													assets/images/nodesk-sm.jpg 480w,
+													assets/images/nodesk-md.jpg 768w,
+													assets/images/nodesk-lg.jpg 1024w,
+													assets/images/nodesk.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="green background and white logo">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">Nodesk</span>
+												<h2 class="project-concept">Fast, easy and reliable</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+							<li class="five">
+								<section class="slideshow-item">
+									<a href="center-for-autisme.html" aria-label="link to project">
+										<img src="assets/images/cfa.jpg" srcset="
+													assets/images/cfa-sm.jpg 320w,
+													assets/images/cfa-sm.jpg 480w,
+													assets/images/cfa-md.jpg 768w,
+													assets/images/cfa-lg.jpg 1024w,
+													assets/images/cfa.jpg 1280w" sizes="
+													(max-width: 20em) 30vw,
+													(max-width: 30em) 60vw,
+													(max-width: 40em) 90vw" alt="business card center for autisme">
+										<div class="view-project-inner">
+											<div class="project-text-wrap">
+												<span class="project-title">Center For Autisme</span>
+												<h2 class="project-concept">A place like home</h2>
+											</div>
+										</div>
+									</a>
+								</section>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- CONTACT -->
+				<div class="row" id="contact">
+					<!-- Social media section -->
+					<div class="col-sm-6 col-md-5 col-lg-5 col-xl-4 d-flex justify-content-center align-items-center"
+						id="social-media-col">
+						<div class="content-wrapper d-flex flex-column justify-content-around" id="soMe-wrapper">
+							<p class="py-3">If you would like to find out more about me, or my work, follow the
+								links
+								below.
+							</p>
+							<div class="d-flex">
+								<a class="btn btn-default mr-3 linkedIn-btn"
+									href="https://www.linkedin.com/in/paula-patrunjel/"
+									aria-label="linkedin profile link">LinkedIn</a>
+								<a class="btn btn-default mr-3 dribbble-btn" href="https://github.com/Ppa13"
+									aria-label="github profile link">Github</a>
+								<a class="btn btn-default mr-3 fb-btn" href="https://www.facebook.com/paula.p.0"
+									aria-label="facebook profile link">Facebook</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Form section -->
+					<div class="col-sm-6 col-md-7 col-lg-7 col-xl-8 d-flex justify-content-center align-items-center"
+						id="form-col">
+						<div id="letter-svg-wrapper">
+							<img src="assets/images/letter.svg" alt="letter" id="letter-svg">
+							<div id="letter-content-wrapper">
+								<h2 class="form-headline">Having questions?</h2>
+								<button class="btn btn-default" onclick="openForm()" id="send-message-btn"
+									aria-label="button for opening a form to send a message">Send message</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Form pop-up -->
+					<div class="form-popup" id="myForm">
+						<form name="contactForm" method="POST" action="" class="form-container py-3 px-3">
+							<div class="form-padding">
+								<div class="form-row d-flex flex-column m-0 p-0" id="exit-row">
+									<div class="exit-col">
+										<i class="far fa-times-circle fa-2x" onclick="closeForm()"
+											aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="d-flex flex-column py-5">
+									<div class="form-row d-flex flex-column m-0 p-0">
+										<div class="col-25">
+											<label for="sender_name">Name</label>
+										</div>
+										<div class="col-75">
+											<input type="text" name="sender_name" autofocus="" required>
+										</div>
+									</div>
+
+									<div class="form-row d-flex flex-column m-0 p-0">
+										<div class="col-25">
+											<label for="sender_email">Email Address</label>
+										</div>
+										<div class="col-75">
+											<input type="email" name="sender_email" required>
+										</div>
+									</div>
+
+									<div class="form-row d-flex flex-column m-0 p-0">
+										<div class="col-25">
+											<label for="message">Message</label>
+										</div>
+										<div class="col-75">
+											<textarea name="message" rows="10" cols="50" required></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="form-row d-flex align-items-end end m-0 p-0" id="send-row">
+									<div class="send-col w-100">
+										<input type="submit" value="Submit" class="btn btn-default" id="send-btn">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="row align-items-center justify-content-center" id="footer-row">
+			<div class="col-xs-12 col-md-12" id="footer-col">
+				<footer>
+					<h5 class="m-0 p-2">&#xa9; 2019 Paula Patrunjel</h5>
+				</footer>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<script src="js/jquery.min.js"></script>
+</body>
+
+</html>
